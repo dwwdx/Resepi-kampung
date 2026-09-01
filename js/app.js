@@ -594,7 +594,10 @@
   }
 
   /* ---------- 14. BOOT ---------- */
-  document.addEventListener('DOMContentLoaded', () => {
+  let sudahBoot = false;
+  function boot() {
+    if (sudahBoot) return;
+    sudahBoot = true;
     initHeader();
     initCarian();
     initBorang();
@@ -610,5 +613,11 @@
     $$('[data-tahun]').forEach((el) => { el.textContent = new Date().getFullYear(); });
 
     initReveal();
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot, { once: true });
+  } else {
+    boot();
+  }
 })();
