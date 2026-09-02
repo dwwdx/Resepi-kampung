@@ -386,7 +386,7 @@
       const vids = (typeof VIDEO !== 'undefined' ? VIDEO : []);
       if (vids.length) {
         const sec = $('#secVideo');
-        if (sec) { sec.removeAttribute('hidden'); sec.classList.remove('hide'); }
+        if (sec) { sec.removeAttribute('hidden'); sec.classList.remove('hide'); sec.classList.add('has-video'); }
         gridVid.innerHTML = vids.slice(0, 3).map((v, i) => `
           <a class="video-card reveal reveal-d${i + 1}"
              href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener">
@@ -397,7 +397,7 @@
           </a>`).join('');
       } else {
         const sec = $('#secVideo');
-        if (sec) { sec.classList.add('hide'); sec.setAttribute('hidden', ''); }
+        if (sec) { sec.classList.add('hide'); sec.setAttribute('hidden', ''); sec.classList.remove('has-video'); }
       }
     }
   }
