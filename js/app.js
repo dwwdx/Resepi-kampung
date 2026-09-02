@@ -579,7 +579,26 @@
 
   /* ---------- 13. NEWSLETTER (demo, tiada backend) ---------- */
   function initBorang() {
-    $$('form[data-demo]').forEach((f) => {
+    $('form[data-contact-form]').forEach((f) => {
+      f.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nama = f.querySelector('input[type="text"]')?.value.trim() || '';
+        const email = f.querySelector('input[type="email"]')?.value.trim() || '';
+        const subjek = f.querySelector('select')?.value.trim() || 'Mesej daripada laman web';
+        const mesej = f.querySelector('textarea')?.value.trim() || '';
+        const subject = `[Resepi Kampung] ${subjek}`;
+        const body = [
+          `Nama: ${nama}`,
+          `E-mel pengirim: ${email}`,
+          `Subjek: ${subjek}`,
+          '',
+          mesej
+        ].join('\n');
+        window.location.href = `mailto:resepikampungx@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    });
+
+    $('form[data-demo]').forEach((f) => {
       f.addEventListener('submit', (e) => {
         e.preventDefault();
         const btn = f.querySelector('button[type=submit]');
