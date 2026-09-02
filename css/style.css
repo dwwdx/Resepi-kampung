@@ -987,9 +987,8 @@ p { text-wrap: pretty; }
 body.locked { overflow: hidden; }
 
 /* ---------- 20. REVEAL ANIMATION ---------- */
-.reveal { opacity: 1; transform: none; }
-html.js-ready .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
-html.js-ready .reveal.in { opacity: 1; transform: none; }
+.reveal { opacity: 1; transform: none; transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
 
 /* Jangan tunjuk seksyen video yang belum ada kandungan. */
 #secVideo { display: none; }
