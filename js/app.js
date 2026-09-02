@@ -558,15 +558,16 @@
         </div>
         <div class="prose">`;
       if (item.bahagianBahan && item.bahagianBahan.length) {
+        html += `<h2>Bahan-bahan</h2>`;
         html += item.bahagianBahan.map((bahagian) =>
-          `<h2>${esc(bahagian.tajuk)}</h2><ul>${(bahagian.bahan || []).map((b) => `<li>${esc(b)}</li>`).join('')}</ul>`
+          `<h3>${esc(bahagian.tajuk)}</h3><ul>${(bahagian.bahan || []).map((b) => `<li>${esc(b)}</li>`).join('')}</ul>`
         ).join('');
       } else if (item.bahan && item.bahan.length) {
-        html += `<h2>Bahan-Bahan</h2><ul>${
+        html += `<h2>Bahan-bahan</h2><ul>${
           item.bahan.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>`;
       }
       if (item.caraPenyediaan) {
-        html += `<h2>Cara Penyediaan</h2><p>${esc(item.caraPenyediaan)}</p>`;
+        html += `<h2>👩‍🍳 Cara Penyediaan</h2><p>${esc(item.caraPenyediaan)}</p>`;
       }
       if (item.tiktok) {
         html += `<div class="cta-actions recipe-video-action">
