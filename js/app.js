@@ -5,6 +5,7 @@
    ========================================================== */
 (function () {
   'use strict';
+  document.documentElement.classList.add('js-ready');
 
   /* ---------- 1. HELPERS ---------- */
   const $  = (s, r = document) => r.querySelector(s);
@@ -384,6 +385,8 @@
     if (gridVid) {
       const vids = (typeof VIDEO !== 'undefined' ? VIDEO : []);
       if (vids.length) {
+        const sec = $('#secVideo');
+        if (sec) { sec.removeAttribute('hidden'); sec.classList.remove('hide'); }
         gridVid.innerHTML = vids.slice(0, 3).map((v, i) => `
           <a class="video-card reveal reveal-d${i + 1}"
              href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener">
@@ -394,7 +397,7 @@
           </a>`).join('');
       } else {
         const sec = $('#secVideo');
-        if (sec) sec.classList.add('hide');
+        if (sec) { sec.classList.add('hide'); sec.setAttribute('hidden', ''); }
       }
     }
   }
