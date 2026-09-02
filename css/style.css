@@ -1012,3 +1012,9 @@ body.locked { overflow: hidden; }
   body { background: #fff; }
   .layout-side { grid-template-columns: 1fr; }
 }
+
+
+/* Butang TikTok pada halaman detail resepi */
+.tiktok-action { margin-top: var(--sp-6); }
+.tiktok-action .btn { display: inline-flex; align-items: center; gap: var(--sp-2); }
+.tiktok-action svg { width: 20px; height: 20px; }
