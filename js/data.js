@@ -166,10 +166,6 @@ const RESEPI = [
       }
     ],
 
-    langkah: [
-      'Untuk langkah penyediaan lengkap, sila rujuk video TikTok melalui butang di atas.'
-    ],
-
     petua: 'Makan nasi ini begitu sahaja pun sudah cukup menyelerakan. Hidangkan bersama air asam kerisik untuk rasa yang lebih lengkap.'
   },
 
