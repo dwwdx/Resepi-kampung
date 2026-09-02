@@ -582,7 +582,7 @@
 
   /* ---------- 13. NEWSLETTER (demo, tiada backend) ---------- */
   function initBorang() {
-    $('form[data-contact-form]').forEach((f) => {
+    $$('form[data-contact-form]').forEach((f) => {
       f.addEventListener('submit', (e) => {
         e.preventDefault();
         const nama = f.querySelector('input[type="text"]')?.value.trim() || '';
