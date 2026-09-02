@@ -601,7 +601,7 @@
       });
     });
 
-    $('form[data-demo]').forEach((f) => {
+    $$('form[data-demo]').forEach((f) => {
       f.addEventListener('submit', (e) => {
         e.preventDefault();
         const btn = f.querySelector('button[type=submit]');
