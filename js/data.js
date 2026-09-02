@@ -112,6 +112,67 @@ const KATEGORI_ARTIKEL = [
    ---------------------------------------------------------- */
 const RESEPI = [
 
+  {
+    slug: 'nasi-kari-kambing',
+    tajuk: 'Nasi Kari Kambing',
+    ringkasan: 'Menu mudah tetapi sangat sedap, lengkap dengan air asam kerisik yang menyegarkan.',
+    kategori: 'nasi-mi',
+    img: 'images/resepi/nasi-kari-kambing.png',
+    penulis: 'Resepi Kampung',
+    tarikh: '2026-09-03',
+    kesukaran: 'Mudah',
+    trending: false,
+    pilihan: false,
+    tag: ['kambing', 'nasi', 'kari', 'air asam', 'mudah'],
+    tiktok: 'https://vt.tiktok.com/ZSq1PjN43/',
+
+    bahagianBahan: [
+      {
+        tajuk: 'Nasi Kari Kambing',
+        bahan: [
+          '1–2 sudu besar minyak sapi/butter',
+          '3 ulas bawang putih',
+          '½ biji bawang besar',
+          'Halia',
+          '3 sekawan',
+          'Daun pandan',
+          'Daun kari',
+          '1 tin kecil kari kambing',
+          '½ cawan susu cair',
+          '2 cawan beras basmathi',
+          '2½ cawan air',
+          'Stok ayam atau kiub ayam',
+          'Telur rebus',
+          'Daun ketumbar'
+        ]
+      },
+      {
+        tajuk: 'Air Asam Kerisik',
+        bahan: [
+          '2–3 tangkai cili besar',
+          '2 tangkai cili padi',
+          'Belacan',
+          '1 biji tomato (saiz kecil)',
+          'Sedikit gula',
+          'Garam & perasa',
+          'Air asam jawa',
+          '1–2 biji tomato',
+          '1 biji bawang besar',
+          'Cili padi mengikut citarasa',
+          'Sedikit sos cili',
+          '1–2 sudu besar kerisik',
+          'Perahan limau nipis'
+        ]
+      }
+    ],
+
+    langkah: [
+      'Untuk langkah penyediaan lengkap, sila rujuk video TikTok melalui butang di atas.'
+    ],
+
+    petua: 'Makan nasi ini begitu sahaja pun sudah cukup menyelerakan. Hidangkan bersama air asam kerisik untuk rasa yang lebih lengkap.'
+  },
+
   // ┌──────────────────────────────────────────────┐
   // │  MASIH KOSONG — tambah resepi anda di sini   │
   // └──────────────────────────────────────────────┘
