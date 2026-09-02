@@ -112,56 +112,9 @@ const KATEGORI_ARTIKEL = [
    ---------------------------------------------------------- */
 const RESEPI = [
 
-  {
-    slug: 'nasi-kari-kambing',
-    tajuk: 'Nasi Kari Kambing',
-    ringkasan: 'Menu mudah tapi sangat sedap. Jom buat Nasi Kari Kambing! Hidang sekali dengan air asam kerisik, memang sangatlah sedap. Makan nasi ini begitu sahaja pun dah cukup menyelerakan. 😊',
-    kategori: 'nasi-mi',
-    img: 'images/resepi/nasi-kari-kambing.png',
-
-    bahagianBahan: [
-      {
-        tajuk: '🍛 Nasi Kari Kambing',
-        bahan: [
-          '1–2 sudu besar minyak sapi/butter',
-          '3 ulas bawang putih',
-          '½ biji bawang besar',
-          'Halia',
-          '3 sekawan',
-          'Daun pandan',
-          'Daun kari',
-          '1 tin kecil kari kambing',
-          '½ cawan susu cair',
-          '2 cawan beras basmathi',
-          '2½ cawan air',
-          'Stok ayam atau kiub ayam',
-          'Telur rebus',
-          'Daun ketumbar'
-        ]
-      },
-      {
-        tajuk: '🌶️ Air Asam Kerisik',
-        bahan: [
-          '2–3 tangkai cili besar',
-          '2 tangkai cili padi',
-          'Belacan',
-          '1 biji tomato (saiz kecil)',
-          'Sedikit gula',
-          'Garam & perasa',
-          'Air asam jawa',
-          '1–2 biji tomato',
-          '1 biji bawang besar',
-          'Cili padi mengikut citarasa',
-          'Sedikit sos cili',
-          '1–2 sudu besar kerisik',
-          'Perahan limau nipis'
-        ]
-      }
-    ],
-
-    caraPenyediaan: 'Untuk langkah penyediaan lengkap, boleh rujuk video asal di TikTok:',
-    tiktok: 'https://vt.tiktok.com/ZSq1PjN43/'
-  }
+  // ┌──────────────────────────────────────────────┐
+  // │  MASIH KOSONG — tambah resepi anda di sini   │
+  // └──────────────────────────────────────────────┘
 
 ];
 
