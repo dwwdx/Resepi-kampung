@@ -24,10 +24,22 @@
     return `${d.getDate()} ${BULAN[d.getMonth()]} ${d.getFullYear()}`;
   }
 
-  function gambar(item, i = 0) {
-    if (item && item.img) return item.img;
+  function gambarGanti(i = 0) {
     const g = (typeof TETAPAN !== 'undefined' && TETAPAN.gambarGanti) || [];
     return g.length ? g[i % g.length] : '';
+  }
+
+  function gambar(item, i = 0) {
+    return item && item.img ? item.img : gambarGanti(i);
+  }
+
+  function gambarAttr(item, i = 0) {
+    const src = gambar(item, i);
+    const fallback = gambarGanti(i);
+    const error = fallback && src !== fallback
+      ? ` onerror="this.onerror=null;this.src='${esc(fallback)}'"`
+      : '';
+    return `src="${esc(src)}"${error}`;
   }
 
   const namaKategori = (slug) => {
@@ -73,7 +85,7 @@
       <article class="${kelas}">
         <div class="card-media">
           ${badge ? `<span class="badge badge--float">${esc(badge)}</span>` : ''}
-          <img src="${esc(gambar(r, i))}" alt="${esc(r.tajuk)}" loading="lazy" decoding="async">
+          <img ${gambarAttr(r, i)} alt="${esc(r.tajuk)}" loading="lazy" decoding="async">
         </div>
         <div class="card-body">
           <span class="badge">${esc(namaKategori(r.kategori))}</span>
@@ -99,7 +111,7 @@
     return `
       <article class="${kelas}">
         <div class="card-media">
-          <img src="${esc(gambar(a, i))}" alt="${esc(a.tajuk)}" loading="lazy" decoding="async">
+          <img ${gambarAttr(a, i)} alt="${esc(a.tajuk)}" loading="lazy" decoding="async">
         </div>
         <div class="card-body">
           <span class="badge badge--kunyit">${esc(namaKategori(a.kategori))}</span>
@@ -126,7 +138,7 @@
       <a class="card-h" href="${esc(url)}">
         <div class="card-h-media">
           ${nombor ? `<span class="card-h-num">${nombor}</span>` : ''}
-          <img src="${esc(gambar(item, i))}" alt="${esc(item.tajuk)}" loading="lazy" decoding="async">
+          <img ${gambarAttr(item, i)} alt="${esc(item.tajuk)}" loading="lazy" decoding="async">
         </div>
         <div class="card-h-body">
           <h4>${esc(item.tajuk)}</h4>
@@ -272,7 +284,7 @@
           ? `artikel-detail.html?a=${encodeURIComponent(x.slug)}`
           : `resepi-detail.html?r=${encodeURIComponent(x.slug)}`;
         return `<a href="${esc(url)}">
-          <img src="${esc(gambar(x, i))}" alt="">
+          <img ${gambarAttr(x, i)} alt="">
           <span><b>${esc(x.tajuk)}</b><small>${esc(namaKategori(x.kategori))}</small></span>
         </a>`;
       }).join('');
@@ -327,7 +339,7 @@
         return `
           <a class="kat-card reveal reveal-d${(i % 5) + 1}" href="resepi.html?kategori=${encodeURIComponent(k.slug)}">
             <span class="kat-card-count">${bil} resepi</span>
-            <img src="${esc(k.img)}" alt="${esc(k.nama)}" loading="lazy" decoding="async">
+            <img ${gambarAttr(k, i)} alt="${esc(k.nama)}" loading="lazy" decoding="async">
             <div class="kat-card-body">
               <h3>${esc(k.nama)}</h3>
               <p>${esc(k.desc)} ${I.anak}</p>
@@ -533,7 +545,7 @@
             ${item.bacaan ? ` · ${esc(item.bacaan)} bacaan` : ''}</small>
         </div>
       </div>
-      <img src="${esc(gambar(item, 0))}" alt="${esc(item.tajuk)}"
+      <img ${gambarAttr(item, 0)} alt="${esc(item.tajuk)}"
            style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover">`;
 
     if (jenis === 'resepi') {
