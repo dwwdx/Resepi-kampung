@@ -557,7 +557,19 @@
           ${item.kategori ? `<div>${I.pinggan}<small>Kategori</small><b>${esc(namaKategori(item.kategori))}</b></div>` : ''}
         </div>
         <div class="prose">`;
-      if (item.bahan && item.bahan.length) {
+      if (item.tiktok) {
+        html += `<div class="cta-actions recipe-video-action">
+          <a class="btn btn--primary" href="${esc(item.tiktok)}" target="_blank" rel="noopener noreferrer" aria-label="Tonton video Nasi Kari Kambing di TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.83-2.48V9.77a5.68 5.68 0 1 0 4.92 5.63V8.87a7.35 7.35 0 0 0 4.3 1.38V7.16a4.29 4.29 0 0 1-3.24-1.34Z"/></svg>
+            <span>Tonton video di TikTok</span>
+          </a>
+        </div>`;
+      }
+      if (item.bahagianBahan && item.bahagianBahan.length) {
+        html += item.bahagianBahan.map((bahagian) =>
+          `<h2>${esc(bahagian.tajuk)}</h2><ul>${(bahagian.bahan || []).map((b) => `<li>${esc(b)}</li>`).join('')}</ul>`
+        ).join('');
+      } else if (item.bahan && item.bahan.length) {
         html += `<h2>Bahan-Bahan</h2><ul>${
           item.bahan.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>`;
       }
