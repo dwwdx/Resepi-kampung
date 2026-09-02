@@ -150,12 +150,47 @@ const RESEPI = [
    ---------------------------------------------------------- */
 const ARTIKEL = [
 
-  // ┌───────────────────────────────────────────────┐
-  // │  MASIH KOSONG — tambah artikel anda di sini   │
-  // └───────────────────────────────────────────────┘
+  {
+    slug: '7-bahan-dapur-naikkan-rasa-masakan',
+    tajuk: '7 Bahan Dapur Yang Boleh Membantu Naikkan Rasa Masakan',
+    ringkasan: 'Kenali tujuh bahan dapur yang membantu menyerlahkan rasa, aroma dan tekstur masakan.',
+    kategori: 'tips-petua',
+    img: 'images/artikel/petua-di-dapur.jpeg',
+    penulis: 'Resepi Kampung',
+    bacaan: '4 minit',
+    tag: ['bahan dapur', 'tips masakan', 'petua dapur'],
+    kandungan: `
+      <p>Masakan yang sedap bukan semata-mata bergantung pada banyaknya bahan yang digunakan. Cara memasak, keseimbangan rasa dan pemilihan bahan juga memainkan peranan penting.</p>
+      <p>Selain garam, terdapat beberapa bahan dapur yang boleh membantu memberikan rasa, aroma atau tekstur yang lebih menarik pada hidangan. Namun, setiap bahan mempunyai fungsi yang berbeza dan penggunaannya perlu disesuaikan dengan jenis masakan.</p>
+      <h2>1. Gula Melaka</h2>
+      <p>Gula Melaka boleh digunakan untuk memberikan rasa manis serta aroma yang tersendiri. Ia sesuai dalam masakan yang memerlukan sedikit rasa manis seperti sambal, masakan berkuah dan sesetengah hidangan tradisional.</p>
+      <p>Gunakan sedikit demi sedikit supaya rasa manis tidak mengatasi rasa utama masakan.</p>
+      <h2>2. Garam</h2>
+      <p>Garam bukan sekadar memberikan rasa masin. Dalam masakan, jumlah garam yang sesuai boleh membantu menyerlahkan rasa bahan-bahan lain.</p>
+      <p>Untuk daging, garam juga boleh mempengaruhi tekstur dan kejuicinan apabila digunakan dengan teknik yang betul. Kaedah dan masa penggunaannya bergantung pada jenis hidangan.</p>
+      <h2>3. Santan</h2>
+      <p>Santan memberikan rasa lemak dan tekstur berkrim kepada masakan seperti masak lemak, kari dan beberapa jenis kuih.</p>
+      <p>Ketika memasak hidangan bersantan, gunakan api yang sesuai dan kacau mengikut keperluan resipi. Elakkan memasak pada suhu terlalu tinggi untuk tempoh yang lama kerana santan boleh pecah dan menghasilkan kuah yang berminyak.</p>
+      <h2>4. Asam Jawa</h2>
+      <p>Asam jawa merupakan antara bahan yang biasa digunakan untuk memberikan rasa masam.</p>
+      <p>Dalam masakan tertentu, rasa masam boleh membantu mengimbangi rasa manis, masin, pedas dan berlemak. Sebab itu ia sesuai digunakan dalam hidangan seperti asam pedas, sambal dan pelbagai jenis kuah.</p>
+      <h2>5. Bawang Putih</h2>
+      <p>Bawang putih boleh memberikan aroma dan rasa yang kuat kepada masakan. Ia sering digunakan sebagai bahan tumisan bersama bawang merah, halia atau bahan aromatik lain.</p>
+      <p>Untuk mendapatkan aroma yang lebih harum, bawang putih boleh ditumis sehingga naik bau sebelum bahan-bahan lain dimasukkan.</p>
+      <h2>6. Halia</h2>
+      <p>Halia bukan sahaja menambahkan aroma, malah memberikan rasa pedas dan hangat yang tersendiri. Ia sesuai digunakan dalam sup, masakan berkuah, tumisan dan hidangan berasaskan ayam atau ikan.</p>
+      <p>Jumlah yang digunakan boleh disesuaikan mengikut jenis masakan kerana rasa halia boleh menjadi agak kuat jika digunakan terlalu banyak.</p>
+      <h2>7. Cuka</h2>
+      <p>Cuka boleh digunakan dalam jumlah kecil untuk memberikan rasa masam dan membantu menyeimbangkan sesetengah hidangan.</p>
+      <p>Ia boleh digunakan dalam masakan seperti sos, acar, sambal atau hidangan yang memerlukan sedikit rasa masam. Tambahkan sedikit demi sedikit sambil merasa supaya rasa akhir tidak terlalu masam.</p>
+      <h2>Kesimpulan</h2>
+      <p>Untuk menghasilkan masakan yang lebih sedap, tidak semestinya perlu menggunakan banyak bahan perasa. Yang penting ialah memahami fungsi setiap bahan dan menggunakannya dalam jumlah yang sesuai.</p>
+      <p>Cuba tambah atau kurangkan sesuatu bahan secara berperingkat sambil merasa masakan. Dengan cara ini, lebih mudah untuk mendapatkan keseimbangan rasa yang sesuai dengan selera sendiri dan keluarga.</p>
+      <p><strong>Tip kecil:</strong> Jangan takut untuk merasa masakan beberapa kali ketika memasak. Deria rasa kita ialah panduan paling berguna untuk menentukan sama ada hidangan memerlukan sedikit tambahan garam, rasa masam, manis atau bahan aromatik.</p>
+    `
+  }
 
 ];
-
 
 /* ----------------------------------------------------------
    5. VIDEO (pilihan)
