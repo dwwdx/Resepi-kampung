@@ -189,7 +189,6 @@ const TETAPAN = {
   nama: 'Resepi Kampung',
   tagline: 'Warisan Dapur Nenek',
   deskripsi: 'Himpunan resepi masakan kampung Malaysia yang mudah diikuti — dari lauk harian hingga kuih tradisional warisan.',
-  email: 'resepikampungx@gmail.com',
   perPage: 9,           // berapa kad setiap halaman
   gambarGanti: [        // gambar sementara kalau resepi tiada gambar
     'images/placeholder-1.webp',
