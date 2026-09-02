@@ -71,7 +71,8 @@
     anak:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
     buku:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>',
     kosong: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11V9a7 7 0 0 1 14 0v2"/><path d="M4 11v2a8 8 0 0 0 16 0v-2"/><path d="M12 19v3M8 22h8"/></svg>',
-    main:   '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'
+    main:   '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
+     tiktok: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 4c.3 1.8 1.4 3 3.2 3.4v2.8c-1.2-.1-2.3-.5-3.2-1.1v6.1a4.8 4.8 0 1 1-4.1-4.8v2.8a2 2 0 1 0 1.2 2V4h2.9Z"/></svg>'
   };
 
   /* ---------- 3. RENDER: KAD RESEPI ---------- */
@@ -566,6 +567,7 @@
           item.langkah.map((l) => `<li>${esc(l)}</li>`).join('')}</ol>`;
       }
       if (item.petua) html += `<h2>Petua</h2><blockquote>${esc(item.petua)}</blockquote>`;
+      if (item.tiktok) html += `<div class="tiktok-action"><a class="btn btn--kunyit" href="${esc(item.tiktok)}" target="_blank" rel="noopener noreferrer" aria-label="Tonton penyediaan ${esc(item.tajuk)} di TikTok">${I.tiktok}<span>Tonton penyediaan di TikTok</span></a></div>`;
       html += `</div>`;
     } else {
       html += `<div class="prose">${item.kandungan || `<p>${esc(item.ringkasan || '')}</p>`}</div>`;
