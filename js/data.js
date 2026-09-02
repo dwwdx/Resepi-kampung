@@ -160,8 +160,7 @@ const RESEPI = [
     ],
 
     caraPenyediaan: 'Untuk langkah penyediaan lengkap, boleh rujuk video asal di TikTok:',
-    tiktok: 'https://vt.tiktok.com/ZSq1PjN43/',
-    penutup: 'Selamat mencuba! 😊'
+    tiktok: 'https://vt.tiktok.com/ZSq1PjN43/'
   }
 
 ];
