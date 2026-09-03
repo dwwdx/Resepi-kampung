@@ -113,6 +113,40 @@ const KATEGORI_ARTIKEL = [
 const RESEPI = [
 
   {
+    slug: 'udang-kari-berempah',
+    tajuk: 'Udang Kari Berempah',
+    ringkasan: 'Menu ringkas yang sangat sedap dimakan bersama nasi atau diratah begitu sahaja.',
+    kategori: 'resepi-ringkas',
+    penulis: 'Resepi Kampung',
+    tarikh: '2026-09-03',
+    kesukaran: 'Mudah',
+    tag: ['udang', 'kari', 'berempah', 'resepi ringkas'],
+    bahan: [
+      'Udang (gaul dengan garam dan kunyit)',
+      '1 biji bawang besar',
+      '3 ulas bawang putih',
+      'Tomato',
+      'Daun kari',
+      'Halba campur',
+      'Cili giling Adabi',
+      '2 sudu besar rempah kari udang',
+      'Air (tambah 2–3 kali hingga pecah minyak)',
+      'Sos tiram',
+      'Sos cili',
+      'Air',
+      'Sedikit asam jawa',
+      'Sedikit garam',
+      'Gula',
+      'Seasoning',
+      'Cili besar',
+      'Tomato'
+    ],
+    langkah: [
+      'Untuk langkah penyediaan lengkap, rujuk video asal Udang Kari Berempah di TikTok.'
+    ],
+    tiktok: 'https://vt.tiktok.com/ZSqeQSTTS/'
+  },
+  {
     slug: 'ayam-goreng-kunyit',
     tajuk: 'Ayam Goreng Kunyit',
     ringkasan: 'Menu paling mudah tetapi tetap sedap—buat sendiri lebih jimat daripada beli set nasi di luar.',
