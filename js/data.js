@@ -117,6 +117,7 @@ const RESEPI = [
     tajuk: 'Udang Kari Berempah',
     ringkasan: 'Menu ringkas yang sangat sedap dimakan bersama nasi atau diratah begitu sahaja.',
     kategori: 'resepi-ringkas',
+    img: 'images/resepi/udang-kari-berempah.webp',
     penulis: 'Resepi Kampung',
     tarikh: '2026-09-03',
     kesukaran: 'Mudah',
