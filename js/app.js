@@ -323,10 +323,10 @@
     const gridBaru = $('#gridTerbaru');
     if (gridBaru) {
       if (resepi.length) {
-        gridBaru.innerHTML = resepi.slice(0, 6)
+        gridBaru.innerHTML = resepi.slice(0, 2)
           .map((r, i) => kadResepi(r, i, { delay: (i % 5) + 1 })).join('');
       } else {
-        gridBaru.innerHTML = kadSkeleton(3);
+        gridBaru.innerHTML = kadSkeleton(2);
         const nota = $('#notaTerbaru');
         if (nota) nota.classList.remove('hide');
       }
