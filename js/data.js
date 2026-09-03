@@ -113,6 +113,35 @@ const KATEGORI_ARTIKEL = [
 const RESEPI = [
 
   {
+    slug: 'ayam-goreng-kunyit',
+    tajuk: 'Ayam Goreng Kunyit',
+    ringkasan: 'Menu paling mudah tetapi tetap sedap—buat sendiri lebih jimat daripada beli set nasi di luar.',
+    kategori: 'lauk-kampung',
+    img: 'images/resepi/ayam-goreng-kunyit.png',
+    penulis: 'Resepi Kampung',
+    tarikh: '2026-09-03',
+    kesukaran: 'Mudah',
+    tag: ['ayam', 'goreng kunyit', 'menu mudah'],
+    bahan: [
+      'Isi ayam',
+      'Serbuk kunyit',
+      '1 sudu besar serbuk kari daging',
+      '½ sudu besar serbuk cili',
+      'Garlic powder (pilihan)',
+      'Seasoning',
+      'Garam',
+      '2 sudu besar tepung jagung',
+      'Sedikit air',
+      'Bawang holland atau bawang besar',
+      'Cili besar',
+      'Carrot, kacang panjang dan baby corn'
+    ],
+    langkah: [
+      'Untuk langkah penyediaan lengkap, rujuk video asal Ayam Goreng Kunyit di TikTok.'
+    ],
+    tiktok: 'https://vt.tiktok.com/ZSqe5G7TU/'
+  },
+  {
     slug: 'nasi-kari-kambing',
     tajuk: 'Nasi Kari Kambing',
     ringkasan: 'Menu mudah tetapi sangat sedap. Hidang bersama air asam kerisik untuk rasa yang lebih menyelerakan.',
