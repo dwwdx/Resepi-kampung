@@ -116,7 +116,7 @@ const RESEPI = [
     slug: 'ayam-goreng-kunyit',
     tajuk: 'Ayam Goreng Kunyit',
     ringkasan: 'Menu paling mudah tetapi tetap sedap—buat sendiri lebih jimat daripada beli set nasi di luar.',
-    kategori: 'lauk-kampung',
+    kategori: 'nasi-mi',
     img: 'images/resepi/ayam-goreng-kunyit.png',
     penulis: 'Resepi Kampung',
     tarikh: '2026-09-03',
