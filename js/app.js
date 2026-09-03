@@ -546,7 +546,7 @@
             ${item.bacaan ? ` · ${esc(item.bacaan)} bacaan` : ''}</small>
         </div>
       </div>
-      <img ${gambarAttr(item, 0)} alt="${esc(item.tajuk)}"
+      <img ${gambarAttr(item, 0)} alt="${esc(item.tajuk)}" loading="eager" decoding="async" fetchpriority="high"
            style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover">`;
 
     if (jenis === 'resepi') {
