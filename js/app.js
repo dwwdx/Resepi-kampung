@@ -415,6 +415,25 @@
     }
   }
 
+  /* ---------- 10b. RENDER SEMUA KATEGORI ---------- */
+  function renderKategori() {
+    const gridKat = $('#gridKategori');
+    if (!gridKat || typeof KATEGORI === 'undefined') return;
+
+    const resepi = dataResepi();
+    gridKat.innerHTML = KATEGORI.map((k, i) => {
+      const bil = resepi.filter((r) => r.kategori === k.slug).length;
+      return `<a class="kat-card reveal reveal-d${(i % 5) + 1}" href="resepi.html?kategori=${encodeURIComponent(k.slug)}">
+          <span class="kat-card-count">${bil} resepi</span>
+          <img ${gambarAttr(k, i)} alt="${esc(k.nama)}" loading="lazy" decoding="async">
+          <div class="kat-card-body">
+            <h3>${esc(k.nama)}</h3>
+            <p>${esc(k.desc)} ${I.anak}</p>
+          </div>
+        </a>`;
+    }).join('');
+  }
+
   /* ---------- 11. RENDER SENARAI (resepi.html / artikel.html) ---------- */
   function renderSenarai(jenis) {
     const grid = $('#gridSenarai');
@@ -640,6 +659,7 @@
 
     const halaman = document.body.dataset.page;
     if (halaman === 'utama')          renderUtama();
+    else if (halaman === 'kategori')    renderKategori();
     else if (halaman === 'resepi')    renderSenarai('resepi');
     else if (halaman === 'artikel')   renderSenarai('artikel');
     else if (halaman === 'resepi-detail')  renderDetail('resepi');
